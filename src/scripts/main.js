@@ -42,8 +42,15 @@ console.log(wheatSeed)
 
 import { plantSeeds } from "./tractor.js"
 
+const plantSeedsVariable = plantSeeds(yearlyPlan)
+console.log(plantSeedsVariable)
+
 import { usePlants } from "./field.js"
 
 const hereIsTheArray = usePlants()
-const plantSeedsVariable = plantSeeds(yearlyPlan)
-console.log(plantSeedsVariable)
+
+import { harvestPlants } from "./harvester.js"
+
+const plantHarvest = harvestPlants(hereIsTheArray)
+
+console.log(plantHarvest)
