@@ -1,14 +1,21 @@
 // import plant array
 import { addPlant } from "./field.js"
+// import seeds
+import { createAsparagus } from "./seeds/asparagus.js"
+import { createCorn } from "./seeds/corn.js"
+import { createPotato } from "./seeds/potato.js"
+import { createSoybean } from "./seeds/soybean.js"
+import { createSunflower } from "./seeds/sunflower.js"
+import { createWheat } from "./seeds/wheat.js"
 
 // export a function that accepts a parameter
 export const plantSeeds = (yearsPlanArray) => {
     // create an array of arrays
-    for (arrayArrayInteger of yearsPlanArray) {
+    for (const arrayArrayInteger of yearsPlanArray) {
         // iterate through both arrays
-        for (arrayStringInteger of arrayArrayInteger) {
+        for (const arrayStringInteger of arrayArrayInteger) {
             // each integer on child array should invoke corresponding function
-            if (arrayStringInteger === "asparagus") {
+            if (arrayStringInteger === "Asparagus") {
                 const asparagusSeed = createAsparagus()
                 // add seed to array of plants in field module
                 addPlant(asparagusSeed)
