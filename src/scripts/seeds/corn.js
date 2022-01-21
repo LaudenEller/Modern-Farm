@@ -5,13 +5,13 @@ export const createCorn = () => {
     // each object should have three properties
     {
         type: 'Corn',
-        height: 24,
-        output: 4
+        height: 180,
+        output: 6
     },
     {
         type: 'Corn',
-        height: 24,
-        output: 4
+        height: 180,
+        output: 6
     }
 ]
     return cornObjectArray

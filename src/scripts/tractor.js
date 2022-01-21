@@ -15,15 +15,16 @@ export const plantSeeds = (yearsPlanArray) => {
         // iterate through both arrays
         for (const arrayStringInteger of arrayArrayInteger) {
             // each integer on child array should invoke corresponding function
-            if (arrayStringInteger === "Asparagus") {
-                const asparagusSeed = createAsparagus()
-                // add seed to array of plants in field module
-                addPlant(asparagusSeed)
-            }
-            else if (arrayStringInteger === "Corn") {
+            if (arrayStringInteger === "Corn") {
                 const cornSeed = createCorn()
-                addPlant(cornSeed)
+                addPlant(cornSeed[0])
+                addPlant(cornSeed[1])
             }
+            else if (arrayStringInteger === "Asparagus") {
+            const asparagusSeed = createAsparagus()
+            // add seed to array of plants in field module
+            addPlant(asparagusSeed)
+        }
             else if (arrayStringInteger === "Potato") {
                 const potatoSeed = createPotato()
                 addPlant (potatoSeed)

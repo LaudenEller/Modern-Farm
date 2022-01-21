@@ -9,43 +9,44 @@ const yearlyPlan = createPlan()
 // print function to developer console
 console.log(yearlyPlan)
 
-// temporary test code of module logic
-import { createAsparagus } from "./seeds/asparagus.js"
+// // temporary test code of module logic
+// import { createAsparagus } from "./seeds/asparagus.js"
 
-const asparagusSeed = createAsparagus()
-console.log(asparagusSeed)
+// const asparagusSeed = createAsparagus()
+// console.log(asparagusSeed)
 
-import { createCorn } from "./seeds/corn.js"
+// import { createCorn } from "./seeds/corn.js"
 
-const cornSeed = createCorn()
-console.log(cornSeed)
+// const cornSeed = createCorn()
+// console.log(cornSeed)
 
-import { createPotato } from "./seeds/potato.js"
+// import { createPotato } from "./seeds/potato.js"
 
-const potatoSeed = createPotato()
-console.log(potatoSeed)
+// const potatoSeed = createPotato()
+// console.log(potatoSeed)
 
-import { createSoybean } from "./seeds/soybean.js"
+// import { createSoybean } from "./seeds/soybean.js"
 
-const soybeanSeed = createSoybean()
-console.log(soybeanSeed)
+// const soybeanSeed = createSoybean()
+// console.log(soybeanSeed)
 
-import { createSunflower } from "./seeds/sunflower.js"
+// import { createSunflower } from "./seeds/sunflower.js"
 
-const sunflowerSeed = createSunflower()
-console.log(sunflowerSeed)
+// const sunflowerSeed = createSunflower()
+// console.log(sunflowerSeed)
 
-import { createWheat } from "./seeds/wheat.js"
+// import { createWheat } from "./seeds/wheat.js"
 
-const wheatSeed = createWheat()
-console.log(wheatSeed)
+// const wheatSeed = createWheat()
+// console.log(wheatSeed)
 
 import { plantSeeds } from "./tractor.js"
 
 const plantSeedsVariable = plantSeeds(yearlyPlan)
 console.log(plantSeedsVariable)
 
-import { usePlants } from "./field.js"
+import { addPlant, usePlants } from "./field.js"
+
 
 const hereIsTheArray = usePlants()
 
@@ -54,3 +55,9 @@ import { harvestPlants } from "./harvester.js"
 const plantHarvest = harvestPlants(hereIsTheArray)
 
 console.log(plantHarvest)
+
+const seedObject = {};
+
+addPlant(seedObject)
+
+console.log(addPlant)
