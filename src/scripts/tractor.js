@@ -11,35 +11,33 @@ import { createWheat } from "./seeds/wheat.js"
 // export a function that accepts a parameter
 export const plantSeeds = (yearsPlanArray) => {
     // create an array of arrays
+    // for (let i = 0; i < yearsPlanArray.length; i++) {
+    //     for (let j = 0; j < yearsPlanArray[i].length; j++) {
+
     for (const arrayArrayInteger of yearsPlanArray) {
         // iterate through both arrays
         for (const arrayStringInteger of arrayArrayInteger) {
             // each integer on child array should invoke corresponding function
-            if (arrayStringInteger === "Corn") {
+            if (arrayStringInteger === "Asparagus") {
+                // add seed to array of plants in field module
+                addPlant(createAsparagus())
+            }
+            else if (arrayStringInteger === "Potato") {
+                addPlant(createPotato())
+            }
+            else if (arrayStringInteger === "Soybean") {
+                addPlant (createSoybean())
+            }
+            else if (arrayStringInteger === "Sunflower") {
+                addPlant(createSunflower())
+            }
+            else if (arrayStringInteger === "Wheat") {
+                addPlant(createWheat())
+            }
+            else if (arrayStringInteger === "Corn") {
                 const cornSeed = createCorn()
                 addPlant(cornSeed[0])
                 addPlant(cornSeed[1])
-            }
-            else if (arrayStringInteger === "Asparagus") {
-            const asparagusSeed = createAsparagus()
-            // add seed to array of plants in field module
-            addPlant(asparagusSeed)
-        }
-            else if (arrayStringInteger === "Potato") {
-                const potatoSeed = createPotato()
-                addPlant (potatoSeed)
-            }
-            else if (arrayStringInteger === "Soybean") {
-                const soybeanSeed = createSoybean()
-                addPlant (soybeanSeed)
-            }
-            else if (arrayStringInteger === "Sunflower") {
-                const sunflowerSeed = createSunflower()
-                addPlant(sunflowerSeed)
-            }
-            else if (arrayStringInteger === "Wheat") {
-                const WheatSeed = createWheat()
-                addPlant(WheatSeed)
             }
         }
     }
