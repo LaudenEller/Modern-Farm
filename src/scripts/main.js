@@ -7,7 +7,7 @@ import { createPlan } from "./plan.js"
 const yearlyPlan = createPlan()
 
 // print function to developer console
-console.log(yearlyPlan)
+// console.log(yearlyPlan)
 
 // // temporary test code of module logic
 // import { createAsparagus } from "./seeds/asparagus.js"
@@ -42,22 +42,22 @@ console.log(yearlyPlan)
 
 import { plantSeeds } from "./tractor.js"
 
-const plantSeedsVariable = plantSeeds(yearlyPlan)
-console.log(plantSeedsVariable)
+plantSeeds(yearlyPlan)
+// console.log(plantSeedsVariable)
 
-import { addPlant, usePlants } from "./field.js"
+import { usePlants } from "./field.js"
 
 
 const hereIsTheArray = usePlants()
 
 import { harvestPlants } from "./harvester.js"
 
-const plantHarvest = harvestPlants(hereIsTheArray)
+const harvestPlantsVar = harvestPlants(hereIsTheArray)
 
-console.log(plantHarvest)
+console.log(harvestPlantsVar)
 
-const seedObject = {};
+// const seedObject = {};
 
-addPlant(seedObject)
+// addPlant(seedObject)
 
-console.log(addPlant)
+// console.log(addPlant)

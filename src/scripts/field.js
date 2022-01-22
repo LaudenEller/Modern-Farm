@@ -10,8 +10,8 @@ export const addPlant = (seedObject) => {
 export const usePlants = () => {
     const plantArrayCopy = plantArray.map(plant => ({...plant}))
     
-    // investigate array.isArray method for corn array
-    Array.isArray(plantArrayCopy)
+    // // investigate array.isArray method for corn array
+    // Array.isArray(plantArrayCopy)
     
     return plantArrayCopy
 }
