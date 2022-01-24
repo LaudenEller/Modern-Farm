@@ -28,13 +28,10 @@ const populatedPlantArray = usePlants()
 // store imported function to new variable
 const harvestedPlantsArray = harvestPlants(populatedPlantArray)
 
-// populate index.HTML with HTML string
-const locationParentHTMLElement = document.querySelector(".container")
-
-locationParentHTMLElement.innerHTML = Catalog(harvestedPlantsArray)
+const printCatalog = Catalog(harvestedPlantsArray)
 
 // print catalog of harvested plants
-console.log(Catalog)
+console.log(printCatalog)
 
 // print function to developer console
 // console.log(yearlyPlan)

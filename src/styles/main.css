@@ -37,4 +37,25 @@ h1,h2,h3,h4,h5,h6 {
 .container {
     display: flex;
     flex-flow: row wrap;
+    margin: 5px;
+    padding: 25px;
+    color: black;
+    background-color: rgb(252, 233, 192);
+    border-radius: 10px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: black;
+    gap: 10px;
+    gap: 10px 20px;
+    row-gap: 10px;
+    column-gap: 20px;;
+}
+
+.plant {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    gap: 10px 20px;
+    row-gap: 10px;
+    column-gap: 20px;;
 }
