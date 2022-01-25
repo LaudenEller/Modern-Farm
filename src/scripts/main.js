@@ -31,7 +31,7 @@ const harvestedPlantsArray = harvestPlants(populatedPlantArray)
 const printCatalog = Catalog(harvestedPlantsArray)
 
 // print catalog of harvested plants
-console.log(printCatalog)
+// console.log(printCatalog)
 
 // print function to developer console
 // console.log(yearlyPlan)
