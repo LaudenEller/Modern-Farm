@@ -28,7 +28,7 @@ const populatedPlantArray = usePlants()
 // store imported function to new variable
 const harvestedPlantsArray = harvestPlants(populatedPlantArray)
 
-const printCatalog = Catalog(harvestedPlantsArray)
+Catalog(harvestedPlantsArray)
 
 // print catalog of harvested plants
 // console.log(printCatalog)
